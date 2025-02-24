@@ -1,0 +1,69 @@
+---
+
+import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
+import Jumbotron from '../components/Jumbotron.astro';
+import CourseCard from '../components/CourseCard.astro';
+import Galleary from '../components/Galleary.astro';
+import Testimonial from '../components/Testimonial.astro';
+import AboutMD from '../components/AboutMD.astro';
+import Annou from '../components/Annou.astro';
+import Fatures from '../components/Fatures.astro';
+import Team from '../components/Team.astro';
+import Slide from '../components/Slide.astro';  
+import NaviBar from '../components/NaviBar.astro';  
+
+// import function to register Swiper custom elements
+import { register } from 'swiper/element';
+// register Swiper custom elements
+register();
+
+---
+
+<Layout title="Welcome to Green 21 SF">
+	<main>
+
+        <NaviBar/>
+
+		<Annou/>
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <Slide/>
+        </div>
+
+		<Fatures/>
+		
+
+		<AboutMD/>
+		
+		<Jumbotron ktext='Course' ntext=' Offered'/>
+		<div class="max-w-screen-xl flex-wrap items-center justify-between mx-auto p-4 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-6">
+			<div class=""><CourseCard title='Fire Fighting' Price='' imgname='/images/Course/Fire.jpg'/></div>
+			<div class=""><CourseCard title='Security Supervisor' Price='' imgname='/images/Course/ss.jpg'/></div>
+			<div class=""><CourseCard title='Security Officer' Price='' imgname='/images/Course/so.jpg'/></div>
+			<div class=""><CourseCard title='Computer' Price='' imgname='/images/Course/com.jpg'/></div>
+		</div>
+
+		<hr class="container my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
+		<Jumbotron ktext='Galleary' ntext=''/>
+
+		<Galleary/>
+		<hr class="container my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+
+
+		<Team/>
+		
+
+		<Testimonial/>
+
+		
+		<Footer/>
+		
+
+
+	</main>
+</Layout>
+
+<style>
+	
+</style>

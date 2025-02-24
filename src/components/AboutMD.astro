@@ -1,0 +1,30 @@
+---
+import { Image } from 'astro:assets';
+import mdImage from "../../public/images/md.jpg";
+---
+
+<div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+<section class="bg-white dark:bg-gray-900">
+    <div class="container px-6 py-10 mx-auto">
+        <div class="lg:-mx-6 lg:flex lg:items-center">
+            <!--<img class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-84 rounded-lg" src="/images/md.jpg" alt="">-->
+            <Image src={mdImage} class="object-cover object-center lg:w-1/2 lg:mx-6 w-full h-84 rounded-lg" alt="K S Bhovi" />
+            <div class="mt-8 lg:w-1/2 lg:px-6 lg:mt-0">
+                <p class="text-5xl font-semibold text-blue-500 ">“</p>
+
+                <h1 class="text-2xl font-semibold text-gray-800 dark:text-white lg:text-3xl lg:w-96">
+                    ABOUT OUR COMPANY
+                </h1>
+
+                <p class="max-w-lg mt-6 text-gray-500 dark:text-gray-400 text-justify	">
+                    “ <b>GREEN 21 SF SECURITY SERVICES PVT LTD</b> was formed in 2012 by K.S BHOVI. Under his able guidance and vision G21SF has become a prominent exServicemen society which has helped exServicemen and their dependents in transitioning seamlessly to get in to corporate sector and other career opportunities. ”
+                </p>
+
+                <h3 class="mt-6 text-lg font-medium text-blue-500">Capt. K S BHOVI (Retd)</h3>
+                <p class="text-gray-600 dark:text-gray-300">Managing Director</p>
+
+            </div>
+        </div>
+    </div>
+</section>
+</div>
